@@ -7,7 +7,7 @@ contributes:
       type: book
       output-dir: docs
     book:
-      title: "book"
+      title: $abnt.titulo
       author: "Jane Doe"
       date: "1/16/2023"
       chapters:
@@ -15,6 +15,7 @@ contributes:
         - intro.qmd
         - summary.qmd
         - references.qmd
+    bibliography: references.bib
   formats:
     html:
       theme: cosmo

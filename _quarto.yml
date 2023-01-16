@@ -1,7 +1,44 @@
 project:
   type: abnt
+abnt:
+  titulo: "Título do trabalho"
+  # subtitulo: "Subtítulo do trabalho"
+  autor: "Nome do autor"
+  orientador: "Nome do orientador"
+  # coorientador: "Nome do coorientador"
+    # membros: 
+  elementos-externos:
+    - ext/capa.qmd
+    # - lombada.qmd
+  elementos-pre-textuais:
+    - folha_de_rosto.qmd
+    # - errata.qmd
+    - folha_de_aprovacao.qmd
+    # - dedicatoria.qmd
+    # - epigrafe.qmd
+    # - agradecimentos.qmd
+    - resumo.qmd
+    - abstract.qmd
+    # - listas.qmd
+      # - lista de ilustrações *
+      # - lista de tabelas *
+      # - lista de símbolos *
+      # - lista de abreviaturas e siglas *
+      # - lista de símbolos *
+    # - sumario.qmd
+  elementos-textuais:
+    - introducao.qmd
+    - desenvolvimento.qmd
+    - conclusao.qmd
+  elementos-pos-textuais:
+    - referencias.qmd
+    # - glossário
+    # - apêndice
+    # - anexo
+    # - índice
+    # - colofão
+  bibliografia: references.bib
 
-bibliography: references.bib
 
 
 
