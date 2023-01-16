@@ -1,0 +1,24 @@
+<!-- 
+ABNT NBR-14724
+
+# Folha de rosto 
+
+Elemento obrigatório. 
+ 
+## Anverso 
+
+Os elementos devem ser apresentados na seguinte ordem:
+    a) nome do autor;
+    b) título;
+    c) subtítulo, se houver;
+    d) número do volume, se houver mais de um, deve constar em cada folha de rosto a especifi cação do respectivo volume;
+    e) natureza: tipo do trabalho (tese, dissertação, trabalho de conclusão de curso e outros) e objetivo (aprovação em disciplina, grau pretendido e outros); nome da instituição a que é submetido; área de concentração;
+    f) nome do orientador e, se houver, do coorientador;
+    g) local (cidade) da instituição onde deve ser apresentado;[^1] 
+    h) ano de depósito (da entrega).
+    
+[ˆ1]: No caso de cidades homônimas recomenda-se o acréscimo da sigla da unidade da federação
+## Verso
+
+Deve conter os dados de catalogação-na-publicação, conforme o Código de Catalogação Anglo-Americano vigente. 
+-->

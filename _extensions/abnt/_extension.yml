@@ -6,8 +6,10 @@ contributes:
     project:
       type: book
       output-dir: docs
+    abnt:
+      tipo_documento: monografia
     book:
-      title: $abnt.titulo
+      title: "{{< meta abnt.tipo_documento >}}"
       author: "Jane Doe"
       date: "1/16/2023"
       chapters:

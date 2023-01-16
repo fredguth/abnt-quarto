@@ -1,6 +1,7 @@
 project:
   type: abnt
 abnt:
+  tipo_documento: "tese" # tese, dissertação, monografia, relatório, artigo, etc.
   titulo: "Título do trabalho"
   # subtitulo: "Subtítulo do trabalho"
   autor: "Nome do autor"

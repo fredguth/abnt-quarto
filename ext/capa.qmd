@@ -1,0 +1,18 @@
+<!-- 
+ABNT NBR-14724
+
+# Capa
+Elemento obrigatório. 
+As informações são apresentadas na seguinte ordem:
+    a) nome da instituição (opcional);
+    b) nome do autor;
+    c) título: deve ser claro e preciso, identificando o seu conteúdo e possibilitando a indexação e recuperação da informação;
+    d) subtítulo: se houver, deve ser precedido de dois pontos, evidenciando a sua subordinação ao título;
+    e) número do volume: se houver mais de um, deve constar em cada capa a especificação do
+    respectivo volume;
+    f) local (cidade) da instituição onde deve ser apresentado;[ˆ1]  
+    da sigla da unidade da federação.
+    g) ano de depósito (da entrega).
+
+[ˆ1]: No caso de cidades homônimas recomenda-se o acréscimo da sigla da unidade da federação 
+-->
