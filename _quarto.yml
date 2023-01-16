@@ -1,7 +1,7 @@
 project:
   type: abnt
 abnt:
-  tipo_documento: "tese" # tese, dissertação, monografia, relatório, artigo, etc.
+  tipo_documento: "tese" # tese | dissertacao | tcc
   titulo: "Título do trabalho"
   # subtitulo: "Subtítulo do trabalho"
   autor: "Nome do autor"
@@ -10,22 +10,17 @@ abnt:
     # membros: 
   elementos-externos:
     - ext/capa.qmd
-    # - lombada.qmd
+    # - ext/lombada.qmd
   elementos-pre-textuais:
-    - folha_de_rosto.qmd
-    # - errata.qmd
-    - folha_de_aprovacao.qmd
-    # - dedicatoria.qmd
-    # - epigrafe.qmd
-    # - agradecimentos.qmd
-    - resumo.qmd
-    - abstract.qmd
-    # - listas.qmd
-      # - lista de ilustrações *
-      # - lista de tabelas *
-      # - lista de símbolos *
-      # - lista de abreviaturas e siglas *
-      # - lista de símbolos *
+    - pre/folha_de_rosto.qmd
+    # - pre/errata.qmd
+    - pre/folha_de_aprovacao.qmd
+    # - pre/dedicatoria.qmd
+    # - pre/epigrafe.qmd
+    # - pre/agradecimentos.qmd
+    - pre/resumo.qmd
+    - pre/abstract.qmd
+    # - pre/listas.qmd
     # - sumario.qmd
   elementos-textuais:
     - introducao.qmd
