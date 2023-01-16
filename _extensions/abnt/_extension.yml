@@ -1,0 +1,26 @@
+title: abnt
+author: Fred Guth
+version: 0.1.0
+contributes:
+  project:
+    project:
+      type: book
+      output-dir: docs
+    book:
+      title: "book"
+      author: "Jane Doe"
+      date: "1/16/2023"
+      chapters:
+        - index.qmd
+        - intro.qmd
+        - summary.qmd
+        - references.qmd
+  formats:
+    html:
+      theme: cosmo
+    pdf:
+      documentclass: scrreprt
+
+  # formats:
+  #   pdf:
+  #     template: monashthesis.tex

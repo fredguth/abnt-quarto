@@ -1,0 +1,37 @@
+# ABNT
+
+## Estrutura
+(*= opcional)
+Na ordem:
+- Parte externa
+    - capa
+    - lombada *
+- Parte interna
+    - pré-textuais
+        - folha de rosto
+        - errata *
+        - folha de aprovação
+        - dedicatoria *
+        - epígrafe *
+        - agradecimentos *
+        - resumo
+        - abstract
+        - lista de ilustrações *
+        - lista de tabelas *
+        - lista de símbolos *
+        - lista de abreviaturas e siglas *
+        - lista de símbolos *
+        - sumário
+    - textuais
+        - introdução
+        - desenvolvimento
+        - conclusão
+    - pós-textuais
+        - referências 
+        - glossário
+        - apêndice
+        - anexo
+        - índice
+        - colofão
+
+## Formato
