@@ -26,14 +26,36 @@ contributes:
       html:
         theme: cosmo
       pdf:
-        documentclass: scrbook
-        documentclassoptions: [footsepline=true,headsepline=true]
-        include-in-header: "partials/in-header.tex"
-        include-before-body: "partials/before-body.tex"
+        documentclass: abntex2
+        documentclassoptions:
+        # -- opções da classe memoir --
+          - 12pt
+          - openright
+          - twoside # para impressão apenas em anverso coloque oneside
+          - a4paper
+        # -- opções da classe abntex2
+        #   # %chapter=TITLE,% títulos de capítulos convertidos em letras maiúsculas
+        #   # %section=TITLE,% títulos de seções convertidos em letras maiúsculas
+        #   # %subsection=TITLE,% títulos de subseções convertidos em letras maiúsculas
+        #   # %subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+        # - chapter=TITLE
+        # -- opções do pacote babel --
+        #   - french
+        #   - spanish
+          - english
+          - brazil
+        include-in-header:
+          - "partials/in-header.tex"
+        template-partials:
+          - "partials/title.tex"
+        # include-before-body:
+        #   - "partials/before-body.tex"
+        # include-after-body:
+        #   - partials/after-body.tex
         keep-tex: true
         mainfont: "ETbb"
         sansfont: "TeX Gyre Heros"
         sansfontoptions: "Scale=MatchUppercase"
         toc-title: "Sumário"
-        lang: pt-BR
+        # lang: pt-BR
         

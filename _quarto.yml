@@ -1,12 +1,14 @@
 project:
   type: abnt
 abnt:
-  tipo_documento: "tese" # tese | dissertacao | tcc
   titulo: "Naufrágio e resurreição da imagem"
   subtitulo: "a fotografia de Aylan Kurdi inquieta o imaginário contemporâneo"
   autor: "Anna Cristina de Araújo Rodrigues"
   orientador: "Nome do orientador"
   # co-orientador: "Nome do coorientador"
+  local: "Brasília, DF"
+  data_entrega: "2017, v1.9.2"
+  tipo_documento: "Tese (Doutorado)"
   banca:
     - membro: Albert Einstein
       instituicao: Princeton University
@@ -35,6 +37,10 @@ abnt:
     # - elementos_pos-textuais/indice.qmd
     # - elementos_pos-textuais/colofao.qmd
   bibliografia: references.bib
+  # format:
+  #   pdf:
+  #     include-in-header: 
+        # tex/pacotes.tex
     
 
 

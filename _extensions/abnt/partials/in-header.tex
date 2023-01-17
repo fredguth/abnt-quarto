@@ -1,26 +1,40 @@
-% \usepackage{abnt}
-% \usepackage{xcolor,xcolor-material}
-% % Rodapé
-% \ModifyLayer[addvoffset=-.8ex]{scrheadings.foot.above.line}
-% \ModifyLayer[addvoffset=-.8ex]{plain.scrheadings.foot.above.line}
+% ----------------------------------------------------------
+% PACOTES BÁSICOS
+% ----------------------------------------------------------
+\usepackage{lmodern}            % Usa a fonte Latin Modern          
+\usepackage[T1]{fontenc}        % Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}     % Codificacao do documento (conversão automática dos acentos)
+\usepackage{lastpage}           % Usado pela Ficha catalográfica
+\usepackage{indentfirst}        % Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}              % Controle das cores
+\usepackage{graphicx}           % Inclusão de gráficos
+\usepackage{microtype}          % para melhorias de justificação
+\usepackage{listings}           % Inserir código de linguagem de programação
+\usepackage{nomencl}            % Necessário para o commando makeindex
+\usepackage{pdfpages}  
+      
+% Pacotes de citações
+\usepackage[brazilian,hyperpageref]{backref}     % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}   % Citações padrão ABNT
 
-% % %todos esses elementos iguais
-% % \RedeclareSectionCommands
-% % [beforeskip=\baselineskip,
-% % afterskip=\baselineskip,font=\normalsize\bfseries]
-% % {part,chapter,
-% % section,subsection,subsubsection}
+% CONFIGURAÇÕES DE PACOTES
+% Configurações do pacote graphicx
+\graphicspath{{imgs/}} % diretório de imagens
 
-% % \setkomafont{chapter}{\color{orange}} \setkomafont{section}{\color{teal}}
-% % \setkomafont{subsection}{\color{green!50!black}}
-% %\setkomafont{disposition}{\normalsize} % não funciona, redefinição com
-% %\RedeclareSectionCommand ou \RedeclareSectionCommands
-% \KOMAoptions{headsepline=2pt:\textwidth,footsepline=2pt:\textwidth}
-% %medidas
-% \DeclareNewLayer[
-% background,
-% %outermargin,
-% %topmargin,
-% contents=\layercontentsmeasure
-% ]{measurelayer}
-% \AddLayersToPageStyle{@everystyle@}{measurelayer}
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+    \ifcase #1 %
+        Nenhuma citação no texto.%
+    \or
+        Citado na página #2.%
+    \else
+        Citado #1 vezes nas páginas #2.%
+    \fi}%
+
+
+
