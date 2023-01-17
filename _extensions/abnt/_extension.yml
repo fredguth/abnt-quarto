@@ -1,17 +1,17 @@
 title: abnt
 author: Fred Guth
 version: 0.1.0
+quarto-version: ">=1.2.215"
 contributes:
   project:
     project:
       type: book
-      output-dir: docs
+      output-dir: _abnt
+      post-render: _extensions/abnt/rename.py
     abnt:
       tipo_documento: monografia
     book:
       title: "{{< meta abnt.tipo_documento >}}"
-      author: "Jane Doe"
-      date: "1/16/2023"
       chapters:
         - index.qmd
         - intro.qmd
@@ -22,7 +22,11 @@ contributes:
     html:
       theme: cosmo
     pdf:
-      documentclass: scrreprt
+      documentclass: scrbook
+      documentclassoptions: [footsepline=true,headsepline=true]
+      include-in-header:
+        - "partials/in-header.tex"
+      keep-tex: true
 
   # formats:
   #   pdf:

@@ -1,0 +1,35 @@
+\usepackage{abnt}
+\usepackage{xcolor,xcolor-material}
+\usepackage[sfdefault,lf]{FiraSans}
+%se quiser linha no rodapé
+\ModifyLayer[addvoffset=-.8ex]{scrheadings.foot.above.line}
+\ModifyLayer[addvoffset=-.8ex]{plain.scrheadings.foot.above.line}
+%\pagestyle{scrheadings}
+%\clearscrheadfoot
+%\ihead{\headmark}
+%\ohead{\pagemark}
+% pretextual já faz isso.
+\setkomafont{footsepline}{\color{orange}}
+\setkomafont{headsepline}{\color{teal!50!yellow}}
+\setkomafont{pagenumber}{\normalfont\bfseries\sffamily\color{red}}
+%\renewcommand*{\chapterpagestyle}{scrheadings} %não necessário - já
+implementado
+%todos esses elementos iguais
+\RedeclareSectionCommands
+[beforeskip=\baselineskip,
+afterskip=\baselineskip,font=\normalsize\bfseries]
+{part,chapter,
+section,subsection,subsubsection}
+\setkomafont{chapter}{\color{orange}} \setkomafont{section}{\color{teal}}
+\setkomafont{subsection}{\color{green!50!black}}
+%\setkomafont{disposition}{\normalsize} % não funciona, redefinição com
+%\RedeclareSectionCommand ou \RedeclareSectionCommands
+\KOMAoptions{headsepline=2pt:\textwidth,footsepline=2pt:\textwidth}
+%medidas
+\DeclareNewLayer[
+background,
+%outermargin,
+%topmargin,
+contents=\layercontentsmeasure
+]{measurelayer}
+\AddLayersToPageStyle{@everystyle@}{measurelayer}

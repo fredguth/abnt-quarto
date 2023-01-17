@@ -6,35 +6,38 @@ abnt:
   # subtitulo: "Subtítulo do trabalho"
   autor: "Nome do autor"
   orientador: "Nome do orientador"
-  # coorientador: "Nome do coorientador"
-    # membros: 
-  elementos-externos:
-    - ext/capa.qmd
-    # - ext/lombada.qmd
+  # co-orientador: "Nome do coorientador"
+  banca:
+    - membro: Albert Einstein
+      instituicao: Princeton University
+    - membro: Paulo Freire
+      instituicao: Universidade Federal de Pernambuco
+        
   elementos-pre-textuais:
-    - pre/folha_de_rosto.qmd
-    # - pre/errata.qmd
-    - pre/folha_de_aprovacao.qmd
-    # - pre/dedicatoria.qmd
-    # - pre/epigrafe.qmd
-    # - pre/agradecimentos.qmd
-    - pre/resumo.qmd
-    - pre/abstract.qmd
-    # - pre/listas.qmd
-    # - sumario.qmd
+    - elementos_pre-textuais/capa.qmd
+    # - elementos_pre-textuais/lombada.qmd
+    - elementos_pre-textuais/folha_de_rosto.qmd
+    # - elementos_pre-textuais/errata.qmd
+    - elementos_pre-textuais/folha_de_aprovacao.qmd
+    # - elementos_pre-textuais/dedicatoria.qmd
+    # - elementos_pre-textuais/epigrafe.qmd
+    # - elementos_pre-textuais/agradecimentos.qmd
+    - elementos_pre-textuais/resumo.qmd
+    - elementos_pre-textuais/abstract.qmd
+    # - elementos_pre-textuais/listas.qmd
+    - elementos_pre-textuais/sumario.qmd
   elementos-textuais:
-    - introducao.qmd
-    - desenvolvimento.qmd
-    - conclusao.qmd
+    - elementos_textuais/introducao.qmd
+    - elementos_textuais/desenvolvimento.qmd
+    - elementos_textuais/conclusao.qmd
   elementos-pos-textuais:
-    - referencias.qmd
-    # - glossário
-    # - apêndice
-    # - anexo
-    # - índice
-    # - colofão
+    - elementos_pos-textuais/referencias.qmd
+    # - elementos_pos-textuais/glossario.qmd
+    # - elementos_pos-textuais/apendice-A.qmd
+    # - elementos_pos-textuais/anexo-1.qmd
+    # - elementos_pos-textuais/indice.qmd
+    # - elementos_pos-textuais/colofao.qmd
   bibliografia: references.bib
-
 
 
 
