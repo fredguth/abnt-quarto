@@ -6,28 +6,34 @@ contributes:
   project:
     project:
       type: book
-      output-dir: _abnt
+      output-dir: docs
       post-render: _extensions/abnt/rename.py
     abnt:
       tipo_documento: monografia
+      titulo: "Título"
+      subtitulo: "Subtítulo"
     book:
-      title: "{{< meta abnt.tipo_documento >}}"
+      title: "{{< meta abnt.titulo >}}"
+      subtitle: "{{< meta abnt.subtitulo >}}"
+      author: "{{< meta abnt.autor >}}"
+      language: pt-BR
       chapters:
         - index.qmd
-        - intro.qmd
-        - summary.qmd
-        - references.qmd
-    bibliography: references.bib
-  formats:
-    html:
-      theme: cosmo
-    pdf:
-      documentclass: scrbook
-      documentclassoptions: [footsepline=true,headsepline=true]
-      include-in-header:
-        - "partials/in-header.tex"
-      keep-tex: true
-
-  # formats:
-  #   pdf:
-  #     template: monashthesis.tex
+        - elementos_textuais/intro.qmd
+        - elementos_textuais/imagem.qmd
+    bibliography: "{{< meta abnt.bibliografia >}}"
+    format:
+      html:
+        theme: cosmo
+      pdf:
+        documentclass: scrbook
+        documentclassoptions: [footsepline=true,headsepline=true]
+        include-in-header: "partials/in-header.tex"
+        include-before-body: "partials/before-body.tex"
+        keep-tex: true
+        mainfont: "ETbb"
+        sansfont: "TeX Gyre Heros"
+        sansfontoptions: "Scale=MatchUppercase"
+        toc-title: "Sumário"
+        lang: pt-BR
+        

@@ -2,17 +2,16 @@ project:
   type: abnt
 abnt:
   tipo_documento: "tese" # tese | dissertacao | tcc
-  titulo: "Título do trabalho"
-  # subtitulo: "Subtítulo do trabalho"
-  autor: "Nome do autor"
+  titulo: "Naufrágio e resurreição da imagem"
+  subtitulo: "a fotografia de Aylan Kurdi inquieta o imaginário contemporâneo"
+  autor: "Anna Cristina de Araújo Rodrigues"
   orientador: "Nome do orientador"
   # co-orientador: "Nome do coorientador"
   banca:
     - membro: Albert Einstein
       instituicao: Princeton University
     - membro: Paulo Freire
-      instituicao: Universidade Federal de Pernambuco
-        
+      instituicao: Universidade Federal de Pernambuco   
   elementos-pre-textuais:
     - elementos_pre-textuais/capa.qmd
     # - elementos_pre-textuais/lombada.qmd
@@ -25,11 +24,9 @@ abnt:
     - elementos_pre-textuais/resumo.qmd
     - elementos_pre-textuais/abstract.qmd
     # - elementos_pre-textuais/listas.qmd
-    - elementos_pre-textuais/sumario.qmd
   elementos-textuais:
-    - elementos_textuais/introducao.qmd
-    - elementos_textuais/desenvolvimento.qmd
-    - elementos_textuais/conclusao.qmd
+    - elementos_textuais/intro.qmd
+    - elementos_textuais/imagem.qmd  
   elementos-pos-textuais:
     - elementos_pos-textuais/referencias.qmd
     # - elementos_pos-textuais/glossario.qmd
@@ -38,7 +35,7 @@ abnt:
     # - elementos_pos-textuais/indice.qmd
     # - elementos_pos-textuais/colofao.qmd
   bibliografia: references.bib
-
+    
 
 
 
