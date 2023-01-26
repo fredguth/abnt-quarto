@@ -37,8 +37,11 @@ abnt:
     # - elementos_pos-textuais/indice.qmd
     # - elementos_pos-textuais/colofao.qmd
   bibliografia: references.bib
-  # format:
-  #   pdf:
+format:
+  pdf:
+    mainfont: "ETbb"
+    sansfont: "TeX Gyre Heros"
+    sansfontoptions: "Scale=MatchUppercase"
   #     include-in-header: 
         # tex/pacotes.tex
     

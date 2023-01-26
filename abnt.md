@@ -44,7 +44,7 @@ Na ordem:
 Elemento obrigatório. As informações são apresentadas na seguinte ordem:
 - nome da instituição (opcional);
 - nome do autor;
-- título: deve ser claro e preciso, identifi cando o seu conteúdo e possibilitando a indexação e recuperação da informação;
+- título: deve ser claro e preciso, identificando o seu conteúdo e possibilitando a indexação e recuperação da informação;
 - subtítulo: se houver, deve ser precedido de dois pontos, evidenciando a sua subordinação ao
     título;
 - número do volume: se houver mais de um, deve constar em cada capa a especifi cação do
@@ -131,12 +131,10 @@ Todo texto deve ser digitado ou datilografado com espaçamento 1,5 entre as linh
 Na folha de rosto e na folha de aprovação, o tipo do trabalho, o objetivo, o nome da instituição e a área de concentração devem ser alinhados do meio da mancha gráfica para a margem direita.
 
 #### Notas de rodapé
-As notas devem ser digitadas ou datilografadas dentro das margens, fi cando separadas do texto por um espaço simples de entre as linhas e por filete de 5 cm, a partir da margem esquerda. Devem ser alinhadas, a partir da segunda linha da mesma nota, abaixo da primeira letra da primeira palavra, de forma a destacar o expoente, sem espaço entre elas e com fonte menor.
+As notas devem ser digitadas ou datilografadas dentro das margens, ficando separadas do texto por um espaço simples de entre as linhas e por filete de 5 cm, a partir da margem esquerda. Devem ser alinhadas, a partir da segunda linha da mesma nota, abaixo da primeira letra da primeira palavra, de forma a destacar o expoente, sem espaço entre elas e com fonte menor.
 
 #### Indicativos de seção
-O indicativo numérico, em algarismo arábico, de uma seção precede seu título, alinhado à esquerda,
-separado por um espaço de caractere. Os títulos das seções primárias devem começar em página ímpar (anverso), na parte superior da mancha gráfi ca e ser separados do texto que os sucede por
-um espaço entre as linhas de 1,5. Da mesma forma, os títulos das subseções devem ser separados do texto que os precede e que os sucede por um espaço entre as linhas de 1,5. Títulos que ocupem mais de uma linha devem ser, a partir da segunda linha, alinhados abaixo da primeira letra da primeira palavra do título.
+O indicativo numérico, em algarismo arábico, de uma seção precede seu título, alinhado à esquerda, separado por um espaço de caractere. Os títulos das seções primárias devem começar em página ímpar (anverso), na parte superior da mancha gráfi ca e ser separados do texto que os sucede por um espaço entre as linhas de 1,5. Da mesma forma, os títulos das subseções devem ser separados do texto que os precede e que os sucede por um espaço entre as linhas de 1,5. Títulos que ocupem mais de uma linha devem ser, a partir da segunda linha, alinhados abaixo da primeira letra da primeira palavra do título.
 
 #### Títulos sem indicativo numérico
 Os títulos, sem indicativo numérico – errata, agradecimentos, lista de ilustrações, lista de abreviaturas e siglas, lista de símbolos, resumos, sumário, referências, glossário, apêndice(s), anexo(s) e índice(s) devem ser centralizados. 
@@ -146,11 +144,9 @@ Fazem parte desses elementos a folha de aprovação, a dedicatória e a(s) epíg
 
 ### Paginação
 As folhas ou páginas pré-textuais devem ser contadas, mas não numeradas.
-Para trabalhos digitados ou datilografados somente no anverso, todas as folhas, a partir da folha de rosto, devem ser contadas sequencialmente, considerando somente o anverso. A numeração deve
-figurar, a partir da primeira folha da parte textual, em algarismos arábicos, no canto superior direito da folha, a 2 cm da borda superior, ficando o último algarismo a 2 cm da borda direita da folha. 
+Para trabalhos digitados ou datilografados somente no anverso, todas as folhas, a partir da folha de rosto, devem ser contadas sequencialmente, considerando somente o anverso. A numeração deve figurar, a partir da primeira folha da parte textual, em algarismos arábicos, no canto superior direito da folha, a 2 cm da borda superior, ficando o último algarismo a 2 cm da borda direita da folha. 
 
-Quando o trabalho for digitado ou datilografado em anverso e verso, a numeração das páginas deve
-ser colocada no anverso da folha, no canto superior direito; e no verso, no canto superior esquerdo.
+Quando o trabalho for digitado ou datilografado em anverso e verso, a numeração das páginas deve ser colocada no anverso da folha, no canto superior direito; e no verso, no canto superior esquerdo.
 
 No caso de o trabalho ser constituído de mais de um volume, deve ser mantida uma única sequência de numeração das folhas ou páginas, do primeiro ao último volume. Havendo apêndice e anexo, as suas folhas ou páginas devem ser numeradas de maneira contínua e sua paginação deve dar seguimento à do texto principal.
 
@@ -159,6 +155,7 @@ Elaborada conforme a ABNT NBR 6024. A numeração progressiva deve ser utilizada
 
 ### Citações
 Apresentadas conforme a ABNT NBR 10520.
+
 
 ### Siglas
 A sigla, quando mencionada pela primeira vez no texto, deve ser indicada entre parênteses, precedida do nome completo.
@@ -174,3 +171,6 @@ quadro, retrato, fi gura, imagem, entre outros), seguida de seu número de ordem
 
 ### Tabelas
 Devem ser citadas no texto, inseridas o mais próximo possível do trecho a que se referem e padronizadas conforme o Instituto Brasileiro de Geografi a e Estatística (IBGE).
+
+# Recomendações
+Não colocar arquivos .tex no diretório "root".

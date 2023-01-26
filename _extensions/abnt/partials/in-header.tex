@@ -1,40 +1,25 @@
-% ----------------------------------------------------------
-% PACOTES BÁSICOS
-% ----------------------------------------------------------
-\usepackage{lmodern}            % Usa a fonte Latin Modern          
-\usepackage[T1]{fontenc}        % Selecao de codigos de fonte.
-\usepackage[utf8]{inputenc}     % Codificacao do documento (conversão automática dos acentos)
+
+\usepackage{expl3}              % Usado pelo estilo citação abnt-ibid
+\expandafter\def\csname ver@l3regex.sty\endcsname{} 
 \usepackage{lastpage}           % Usado pela Ficha catalográfica
 \usepackage{indentfirst}        % Indenta o primeiro parágrafo de cada seção.
-\usepackage{color}              % Controle das cores
-\usepackage{graphicx}           % Inclusão de gráficos
-\usepackage{microtype}          % para melhorias de justificação
-\usepackage{listings}           % Inserir código de linguagem de programação
 \usepackage{nomencl}            % Necessário para o commando makeindex
 \usepackage{pdfpages}  
-      
-% Pacotes de citações
-\usepackage[brazilian,hyperpageref]{backref}     % Paginas com as citações na bibl
-\usepackage[alf]{abntex2cite}   % Citações padrão ABNT
+\usepackage[
+    automark,
+    autooneside=false,% <- if you want to use \leftmark and \rightmark in a one sided document
+    headsepline=false
+  ]{scrlayer-scrpage} % Usado para modificar o cabeçalho
 
-% CONFIGURAÇÕES DE PACOTES
-% Configurações do pacote graphicx
+\usepackage{etoolbox}
+
+\usepackage{ragged2e}
+\usepackage[onehalfspacing]{setspace}
+
 \graphicspath{{imgs/}} % diretório de imagens
-
-% Configurações do pacote backref
-% Usado sem a opção hyperpageref de backref
-\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
-% Texto padrão antes do número das páginas
-\renewcommand{\backref}{}
-% Define os textos da citação
-\renewcommand*{\backrefalt}[4]{
-    \ifcase #1 %
-        Nenhuma citação no texto.%
-    \or
-        Citado na página #2.%
-    \else
-        Citado #1 vezes nas páginas #2.%
-    \fi}%
-
-
-
+% \AtBeginEnvironment{quote}{\par\singlespacing\small}
+% \patchcmd{\quote}{\rightmargin}{\rightmargin=0}{}{}
+\renewenvironment{quote}
+  {\par\singlespacing\small\list{}{\rightmargin=0cm \leftmargin=4cm}%
+   \item\relax}
+  {\endlist}
