@@ -1,5 +1,7 @@
 % Options for packages loaded elsewhere
-\PassOptionsToPackage{unicode,linktoc=all,pdfwindowui,pdfpagemode=FullScreen}{hyperref}
+\PassOptionsToPackage{unicode,linktoc=all,pdfwindowui,pdfpagemode=FullScreen,pdfauthor=``Anna
+Cristina de Araújo Rodrigues'',pdftitle=``Naufrágio e resurreição da
+imagem'',pdfproducer =``ABNT-Quarto''}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
@@ -41,7 +43,6 @@
   \let\oldsubparagraph\subparagraph
   \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
-
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
@@ -145,6 +146,33 @@
 \makeatother
 \makeatletter
 \makeatother
+
+\usepackage{hyphenat}
+\usepackage{ifthen}
+\usepackage{calc}
+\usepackage{calculator}
+
+
+
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{fadings}
+\usepackage[pagecolor=none]{pagecolor}
+
+
+% Set the titlepage font families
+
+
+
+
+
+
+
+% Set the coverpage font families
+
 \ifLuaTeX
 \usepackage[bidi=basic]{babel}
 \else
@@ -182,9 +210,138 @@ contemporâneo}
 \date{}
 
 \begin{document}
-\frontmatter
-\maketitle
+%%%%% begin titlepage extension code
 
+  \begin{frontmatter}
+
+\begin{titlepage}
+
+%%% TITLE PAGE START
+
+% Set up alignment commands
+%Page
+\newcommand{\titlepagepagealign}{
+\ifthenelse{\equal{center}{right}}{\raggedleft}{}
+\ifthenelse{\equal{center}{center}}{\centering}{}
+\ifthenelse{\equal{center}{left}}{\raggedright}{}
+}
+
+
+\newcommand{\titleandsubtitle}{
+% Title and subtitle
+{{\Huge{\textbf{\nohyphens{Naufrágio e resurreição da imagem:}}}}\par
+}%
+
+\vspace{\betweentitlesubtitle}
+{
+{\LARGE{\nohyphens{a fotografia de Aylan Kurdi inquieta o imaginário
+contemporâneo}}}\par
+}}
+\newcommand{\titlepagetitleblock}{
+\titleandsubtitle
+}
+
+\newcommand{\authorstyle}[1]{{\textbf{#1}}}
+
+\newcommand{\affiliationstyle}[1]{{\large{#1}}}
+
+\newcommand{\titlepageauthorblock}{
+{\authorstyle{\nohyphens{Anna Cristina de Araújo Rodrigues}\\}}
+}
+
+\newcommand{\titlepageaffiliationblock}{
+\hangindent=1em
+\hangafter=1
+{\affiliationstyle{
+
+
+\vspace{1\baselineskip} 
+}}
+}
+\newcommand{\headerstyled}{%
+{}
+}
+\newcommand{\footerstyled}{%
+{\Large{\textsc{}}}
+}
+\newcommand{\datestyled}{%
+{}
+}
+
+
+\newcommand{\titlepageheaderblock}{\headerstyled}
+
+\newcommand{\titlepagefooterblock}{
+\footerstyled
+}
+
+\newcommand{\titlepagedateblock}{
+\datestyled
+}
+
+%set up blocks so user can specify order
+\newcommand{\titleblock}{\newlength{\betweentitlesubtitle}
+\setlength{\betweentitlesubtitle}{0.5cm}
+{
+
+{\titlepagetitleblock}
+}
+
+\vspace{1cm}
+}
+
+\newcommand{\authorblock}{{\titlepageauthorblock}
+
+\vspace{2\baselineskip}
+}
+
+\newcommand{\affiliationblock}{{\titlepageaffiliationblock}
+
+\vspace{0pt}
+}
+
+\newcommand{\logoblock}{{\includegraphics[width=1.0\textwidth]{imgs/logo.pdf}}
+
+\vspace{2cm}
+}
+
+\newcommand{\footerblock}{}
+
+\newcommand{\dateblock}{}
+
+\newcommand{\headerblock}{}
+
+\thispagestyle{empty} % no page numbers on titlepages
+
+
+\newlength{\minipagewidth}
+\setlength{\minipagewidth}{\textwidth}
+\raggedright % single minipage
+% [position of box][box height][inner position]{width}
+% [s] means stretch out vertically; assuming there is a vfill
+\begin{minipage}[b][\textheight][s]{\minipagewidth}
+\titlepagepagealign
+\logoblock
+
+\authorblock
+
+\titleblock
+
+\affiliationblock
+
+\dateblock
+\par
+
+\end{minipage}\ifthenelse{\equal{}{right} \OR \equal{}{leftright} }{
+\hspace{\B}
+\vrulecode}{}
+\clearpage
+%%% TITLE PAGE END
+\end{titlepage}
+\setcounter{page}{1}
+\end{frontmatter}
+
+%%%%% end titlepage extension code
 \frontmatter
 % \frenchspacing
 \onehalfspacing
@@ -209,11 +366,11 @@ contemporâneo}
 
 
 
-\includepdf{imgs/capa.pdf}
-\pagebreak
-\includepdf{imgs/folha_de_rosto.pdf}
-\pagebreak
-\includepdf{imgs/ficha_catalografica.pdf}
+% \includepdf{imgs/capa.pdf}
+% \pagebreak
+% \includepdf{imgs/folha_de_rosto.pdf}
+% \pagebreak
+% \includepdf{imgs/ficha_catalografica.pdf}
 % \author{$author$}
 % \title{$title$}
 % \def\degreetitle{$degreetype$}
@@ -249,7 +406,7 @@ contemporâneo}
 % \preambulo{Modelo canônico de trabalho monográfico acadêmico em conformidade com
 % as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, frame hidden, interior hidden, sharp corners, breakable, enhanced, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, frame hidden, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden, sharp corners]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Sumário}
 {

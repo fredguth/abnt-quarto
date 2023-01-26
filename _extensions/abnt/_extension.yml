@@ -16,7 +16,6 @@ contributes:
       title: "{{< meta abnt.titulo >}}"
       subtitle: "{{< meta abnt.subtitulo >}}"
       author: "{{< meta abnt.autor >}}"
-      publisher: "publisher"
       chapters:
         - index.qmd
         - elementos_textuais/intro.qmd
@@ -25,7 +24,7 @@ contributes:
     format:
       html:
         theme: cosmo
-      pdf:
+      titlepage-pdf:
         lang: pt-BR
         otherlangs: [en-US, es-ES]
         documentclass: scrbook
@@ -72,6 +71,9 @@ contributes:
           - linktoc=all
           - pdfwindowui
           - pdfpagemode=FullScreen 
+          - pdfauthor="{{< meta abnt.autor >}}"
+          - pdftitle="{{< meta abnt.titulo >}}"
+          - pdfproducer ="ABNT-Quarto"
         fig-cap-location: top
         tbl-cap-location: top
 
