@@ -1,0 +1,52 @@
+% pdfpages, beamarticle, amsmath, amssymb, lmodern, setspace, iftex,
+% mathspec, xeCJK, luatexja-preset, luatexja-preset, upquote,
+% microtype, parskip (if not KOMA), fancyvrb, xcolor, geometry,
+% listings, ulem, babel, csquotes
+
+$doc-class.tex()$
+$pandoc.tex()$
+$title.tex()$
+\begin{document}
+before-body.tex()$
+--------------------
+$if(has-frontmatter)$
+\frontmatter
+$endif$
+$if(title)$
+$if(beamer)$
+\frame{\titlepage}
+$else$
+\maketitle
+$endif$
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+$endif$
+---------------------
+$for(include-before)$
+$include-before$
+$endfor$
+$toc.tex()$
+$if(has-frontmatter)$
+\mainmatter
+$endif$
+$body$
+$before-bib.tex()$
+$if(has-frontmatter)$
+\backmatter
+$endif$
+$biblio.tex()$
+$for(include-after)$
+$include-after$
+$endfor$
+$after-body.tex()$
+\end{document}
+
+
+
+
+$for(beameroption)$
+\setbeameroption{$beameroption$}
+$endfor$

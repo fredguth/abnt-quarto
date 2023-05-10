@@ -24,7 +24,7 @@ contributes:
     format:
       html:
         theme: cosmo
-      titlepage-pdf:
+      pdf:
         lang: pt-BR
         otherlangs: [en-US, es-ES]
         documentclass: scrbook
@@ -63,10 +63,11 @@ contributes:
           - top=30mm
           - left=30mm
           - right=20mm
-          - heightrounded
+          - bottom=20mm
+          - footskip=10mm
           - twoside
           - a4paper
-        indent: 1,24cm
+        # indent: 1,25cm
         hyperrefoptions:
           - linktoc=all
           - pdfwindowui
@@ -86,6 +87,12 @@ contributes:
         include-before-body:
           - "partials/before-body.tex"
       
+
+
+
+
+
+
         # reference-location:
           #         block: Place at end of current top-level block
           # section: Place at end of current section

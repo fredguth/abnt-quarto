@@ -10,16 +10,15 @@
     autooneside=false,% <- if you want to use \leftmark and \rightmark in a one sided document
     headsepline=false
   ]{scrlayer-scrpage} % Usado para modificar o cabeçalho
+\usepackage[hang,flushmargin]{footmisc}
 
 \usepackage{etoolbox}
-
+\usepackage[hyphens,spaces,obeyspaces]{xurl}
 \usepackage{ragged2e}
 \usepackage[onehalfspacing]{setspace}
-
+\setkomafont{pageheadfoot}{ \textsc}
 \graphicspath{{imgs/}} % diretório de imagens
-% \AtBeginEnvironment{quote}{\par\singlespacing\small}
-% \patchcmd{\quote}{\rightmargin}{\rightmargin=0}{}{}
 \renewenvironment{quote}
-  {\par\singlespacing\small\list{}{\rightmargin=0cm \leftmargin=4cm}%
+  {\par\singlespacing\small\list{}{\rightmargin=0cm \leftmargin=4cm }%
    \item\relax}
   {\endlist}

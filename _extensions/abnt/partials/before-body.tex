@@ -1,6 +1,6 @@
 
-\frontmatter
-% \frenchspacing
+\begin{frontmatter}
+\frenchspacing
 \onehalfspacing
 % \RaggedRight
 
@@ -13,6 +13,8 @@
 \def\theparttitle{} % initialization
 \makeatother
 
+\renewcommand{\sectionmark}[1]{\markright{\spacedlowsmallcaps{#1}}}
+
 \pagestyle{scrheadings}
 \clearscrheadfoot
 \automark[section]{chapter}
@@ -20,28 +22,35 @@
 \ofoot{\Ifthispageodd{\leftmark}{\rightmark}}
 % \ifoot[\theparttitle]{\theparttitle}
 
+%%%%% Elementos pre-textuais
 
+% \begin{titlepage}
+% $-- % Capa
+% $if(coverpage-true)$
+% $_coverpage.tex()$
+% $endif$
 
+% $-- % Titlepage
+% $if(titlepage-true)$
+% $if(titlepage-file)$
+% % Use the file
+% \input{$titlepage-filename$}
+% $else$
+% $_titlepage.tex()$
+% $endif$
+% $endif$
 
-% \includepdf{imgs/capa.pdf}
-% \pagebreak
-% \includepdf{imgs/folha_de_rosto.pdf}
-% \pagebreak
-% \includepdf{imgs/ficha_catalografica.pdf}
-% \author{$author$}
-% \title{$title$}
-% \def\degreetitle{$degreetype$}
-% \degrees{$degrees$}
-% \def\affiliation{$affiliation$}
-
-% % Add subject and keywords below
-% \hypersetup{
-%      %pdfsubject={The Subject},
-%      %pdfkeywords={Some Keywords},
-%      pdfauthor={$author$},
-%      pdftitle={$title$},
-%      pdfproducer={Quarto with LaTeX}
-% }
+% $if(titlepage-include-file)$
+% $for(titlepage-include-file)$\input{$titlepage-include-file$}
+% \clearpage
+% $endfor$$endif$
+% \end{titlepage}
+% \setcounter{page}{1}
+% $if(has-frontmatter)$
+% \end{frontmatter}
+% $endif$
+% \end{frontmatter}
+% %%%%% 
 
 
 

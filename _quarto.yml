@@ -4,17 +4,24 @@ abnt:
   titulo: "Naufrágio e resurreição da imagem"
   subtitulo: "a fotografia de Aylan Kurdi inquieta o imaginário contemporâneo"
   autor: "Anna Cristina de Araújo Rodrigues"
-  orientador: "Nome do orientador"
+  orientador: "Prof. Dr. Sérgio Araújo de Sá"
   # co-orientador: "Nome do coorientador"
-  local: "Brasília, DF"
+  local: "Brasília"
   data_entrega: "2017, v1.9.2"
-  tipo_documento: "Tese (Doutorado)"
+  tipo_documento: "Tese"
   banca:
     - membro: Albert Einstein
       instituicao: Princeton University
     - membro: Paulo Freire
       instituicao: Universidade Federal de Pernambuco   
   elementos-pre-textuais:
+    capa:
+      pdf: imgs/capa.pdf
+    folha_de_rosto:
+      pdf: imgs/folha_de_rosto.pdf
+    folha_de_aprovacao:
+      pdf: imgs/folha_de_aprovacao.pdf
+    
     - elementos_pre-textuais/capa.qmd
     # - elementos_pre-textuais/lombada.qmd
     - elementos_pre-textuais/folha_de_rosto.qmd
@@ -37,35 +44,3 @@ abnt:
     # - elementos_pos-textuais/indice.qmd
     # - elementos_pos-textuais/colofao.qmd
   bibliografia: references.bib
-format:
-  titlepage-pdf:
-    mainfont: "ETbb"
-    sansfont: "TeX Gyre Heros"
-    sansfontoptions: "Scale=MatchUppercase"
-    coverpage: false
-    cover-bg-image: "capa.pdf" 
-    titlepage: plain
-    titlepage-logo: "imgs/logo.pdf"
-    titlepage-theme:
-      elements: ["\\logoblock","\\authorblock", "\\titleblock",  "\\affiliationblock", "\\dateblock"  ]
-      page-align: "center"
-      title-style: "plain"
-      title-fontstyle: ["Huge", "textbf"]
-      title-space-after: "1cm"
-      subtitle-fontstyle: "LARGE"
-      title-subtitle-space-between: "0.5cm"
-      author-style: "plain"
-      author-sep: "newline"
-      author-fontstyle: "textbf"
-      author-space-after: "2\\baselineskip"
-      affiliation-style: "numbered-list-with-correspondence"
-      affiliation-fontstyle: "large"
-      affiliation-space-after: "0pt"
-      footer-style: "plain"
-      footer-fontstyle: ["Large", "textsc"]
-      footer-space-after: "0pt"
-      logo-size: "1.0\\textwidth"
-      logo-space-after: "2cm"
-     
-
-
